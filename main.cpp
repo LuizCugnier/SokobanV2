@@ -23,7 +23,8 @@ int main(){
     coord.Y = CY;
     //FIM: COMANDOS PARA REPOSICIONAR O CURSOR NO IN�CIO DA TELA
     ///ALERTA: N�O MODIFICAR O TRECHO DE C�DIGO, ACIMA.
-
+    
+    //boa noite
     //variáveis
     bool menu = true;
     //Variavel do mapa
