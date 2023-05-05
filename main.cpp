@@ -24,38 +24,38 @@ int main(){
     //FIM: COMANDOS PARA REPOSICIONAR O CURSOR NO IN�CIO DA TELA
     ///ALERTA: N�O MODIFICAR O TRECHO DE C�DIGO, ACIMA.
     
-    //boa noite
     //variáveis
-    bool menu = true;
+    //Variavel movimentos jogador
+    char tecla = 0;
+    //variavel opcao menu
+    char opcao_menu = 0;
+    
     //Variavel do mapa
     int mj[13][13] = {      1,1,1,1,1,1,1,1,1,1,1,1,1,
                             1,0,0,0,0,0,0,0,0,0,0,0,1,
                             1,0,0,0,0,0,0,0,0,0,0,0,1,
-                            1,0,0,1,0,0,4,0,0,1,1,0,1,
+                            1,0,0,1,0,0,2,0,0,1,1,0,1,
                             1,0,0,1,0,0,0,0,0,0,1,0,1,
                             1,0,0,1,0,0,0,0,0,1,1,0,1,
                             1,0,0,1,0,0,0,0,0,0,0,0,1,
                             1,0,0,1,1,1,0,0,1,1,1,0,1,
                             1,0,0,0,0,0,0,0,0,0,1,0,1,
                             1,0,0,0,0,0,0,0,0,0,1,0,1,
-                            1,0,0,0,0,0,0,0,0,0,0,0,1,
+                            1,0,0,0,0,0,3,0,0,0,0,0,1,
                             1,0,0,0,0,0,0,0,0,0,0,0,1,
                             1,1,1,1,1,1,1,1,1,1,1,1,1 };
-    //variavel opcao menu
-    char opcao_menu = 0;
-    //Variavel movimentos jogador
-    char tecla = 0;
-    //Variavel do jogo
-    bool termina_jogo = true;
+
+    Menu menu1;
+    menu1.principal = true;
+    menu1.termina_jogo = true;
 
     Jogador jogador;
-
     jogador.x = 5;
     jogador.y = 5;
 
     //começo do jogo.
     imprime_menu();
-    jogo(coord, jogador, menu, tecla, termina_jogo, mj);
+    jogo(coord, jogador, menu1, tecla, mj);
 
 
     return 0;
